@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "noto serif" serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+	overflow: hidden;
+	background: #481005;
+}
+
+.flipbook {
+    width: 1000px;
+    height: 600px;
+}
+
+.flipbook .hard {
+    background-image: url(images/cover.jpg)!important;
+    color: #e9e2e7;
+    font-weight: bold;
+    border: none; 
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flipbook .hard small{
+	font-style: italic;
+	font-weight: lighter;
+	opacity: 0.7;
+	font-size: 14px;
+}
+
+.flipbook .page {
+    background-image: url(images/kiss-bg.jpg );
+    font-style: italic;
+    font-size: 18px;
+    color: #ffffff;
+    background-size: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.page img{
+	width: 50%;
+	object-fit: cover;
+    align-items: center;
+	margin: auto;
+}
+
+.flipbook .page small{
+    color: rgb(216, 194, 204);
+	font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "noto serif" serif;
+    font-size: 20px;
+    color: rgb(208, 161, 161);
+    opacity: 2.50;
+    user-select: none;
+    
+     filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  }
